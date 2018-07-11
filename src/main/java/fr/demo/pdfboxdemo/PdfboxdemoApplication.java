@@ -1,4 +1,4 @@
-package fr.enedis.pdfboxdemo;
+package fr.demo.pdfboxdemo;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

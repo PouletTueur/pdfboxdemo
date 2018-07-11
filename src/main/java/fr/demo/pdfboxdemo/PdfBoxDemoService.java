@@ -1,4 +1,4 @@
-package fr.enedis.pdfboxdemo;
+package fr.demo.pdfboxdemo;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
@@ -8,6 +8,7 @@ import org.apache.pdfbox.printing.PDFPageable;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Map;
 
 public class PdfBoxDemoService {
 
@@ -30,7 +31,7 @@ public class PdfBoxDemoService {
 
     }
 
-    public void editExistingPdfWithText() throws IOException {
+    public void editExistingPdfWithText(Map<String>, List<Coordonnee>) throws IOException {
 
         File file = new File("existingpdf.pdf");
         PDDocument document = PDDocument.load(file);
