@@ -1,5 +1,6 @@
 package fr.demo.pdfboxdemo;
 
+import fr.demo.pdfboxdemo.service.PdfBoxDemoService;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.io.IOException;
@@ -11,7 +12,7 @@ public class PdfboxdemoApplication {
 
 		PdfBoxDemoService pdfBoxDemoService = new PdfBoxDemoService();
 		try {
-			pdfBoxDemoService.editExistingPdfWithText();
+			pdfBoxDemoService.editPdfWithMyValues();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
